@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "TrabajoFinal-RickAndMorty"
+    }
+  },
+  "defaultProject": "TrabajoFinal-RickAndMorty",
+  "cli": {
+    "analytics": false
+  }
 }

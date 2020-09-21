@@ -1,0 +1,23 @@
+/*Titulo con imagen de la caratula*/
+header img
+{
+    /*Centra la imagen*/
+    display:block;
+    margin:auto;
+
+    /*Cambia de tamaño la imagen*/
+    width: 500px;
+}
+
+/*Imagen como button*/
+.divPersonajes img
+{
+    /*Centra la imagen*/
+    display:block;
+    margin:auto;
+    /*Centra la altura*/
+    margin-top: 150px;
+
+    /*Cambia el tamaño de la imagen*/
+    width: 250px;
+}
