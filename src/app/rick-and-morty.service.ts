@@ -15,6 +15,7 @@ export class RickAndMortyService {
 
   get20Character()
   {
+    console.log("Hace la peticion");
     return this.http.get(`${environment.apiUrl}/character/1,20`);
   }
 
