@@ -1,7 +1,77 @@
+<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&display=swap" rel="stylesheet">
+
+
 <header>
     <img src="assets/logo-rick-and-morty.png" alt="Caratula de rick and morty">
   </header>
   
-  <div class="divPersonajes" >
-      <img src="assets/button-rick-and-morty.jpg" (click)="trae20()">
+    <div>
+    <ul class="list-group" *ngFor='let n of name; index as i; first as primero'>
+      <li class="list-group-item" > 
+        <span *ngIf="i || primero"> <h2 id="titleName"> <strong>{{n}}</strong></h2> </span> 
+      </li>
+      <!---->
+      <li class="list-group-item" *ngIf="i || primero">
+        <span> <b>Status:</b> {{characters.results[i].status}} </span> 
+      </li>
+      <!---->
+      <li class="list-group-item" *ngIf="i || primero">
+        <span> <img src="{{characters.results[i].image}}" id="imgPersonajes"> </span> 
+      </li>
+      <!---->
+      <li class="list-group-item" *ngIf="i || primero">
+        <span> <b>Specie:</b> {{characters.results[i].species}} </span> 
+      </li>
+      <!---->
+      <li class="list-group-item" *ngIf="i || primero">
+        <span> <b>Location name:</b> {{characters.results[i].location.name}} </span> 
+      </li>
+      <!---->
+      <li class="list-group-item" *ngIf="i || primero">
+        <span> <b>Location Type:</b> {{typeLocation[i]}} </span> 
+      </li>
+       <!---->
+       <li class="list-group-item" *ngIf="i || primero">
+        <span> <b>Location Dimension:</b> {{dimensionLocation[i]}} </span> 
+      </li>
+  </ul>
   </div>
+
+
+    
+    <div class="divPersonajes"  > 
+      <img src="assets/button-rick-and-morty.jpg" (click)="trae20Character()" title="Haz click aqui" > 
+    </div>
+
+
+      
+       
+    
+
+  
+
+
+
+ 
+
+  
+ 
+  
+   
+  
+  
+
+
+
+
+  
+  
+    
+
+ 
+
+  
+  
+  
+

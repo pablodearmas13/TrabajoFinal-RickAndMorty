@@ -1,6 +1,16 @@
-/*Titulo con imagen de la caratula*/
+@font-face{
+    font-family: "get_schwifty";
+    src: url("src/assets/get_schwifty.ttf");
+  }
+
+header
+{
+    margin-top: 15px;
+}
+  /*Titulo con imagen de la caratula*/
 header img
 {
+    
     /*Centra la imagen*/
     display:block;
     margin:auto;
@@ -19,5 +29,61 @@ header img
     margin-top: 150px;
 
     /*Cambia el tamaño de la imagen*/
-    width: 250px;
+    width: 350px;
+    
+}
+
+#imgPersonajes
+{
+    border-radius: 25px;
+}
+
+.list-group
+{
+    /*centra la tabla*/
+    text-align: center;
+    display:block;
+    margin:auto;
+    
+    /*cambia el tamaño y borde*/
+    width: 500px;
+    border-radius: 25px;
+
+    /*Separa cada carta del personaje*/
+    margin-top: 15px;
+
+    /*bordes y sombras*/
+    box-sizing: 150px;
+    border: solid 2px #65b285;
+    box-shadow:4px 4px 10px #9ae1bd;
+   
+    
+}
+.list-group-item
+{
+    /*bordes de de separacion de atributos*/
+    border: solid 0.3px #9ae1bd;
+     
+    
+}
+
+#titleName
+{
+    /*personalizacion de los nombres*/
+    color: #0cb4cc;
+    font-size: 35px;
+    font-family: get_schwifty;
+}
+
+.list-group-item
+{
+    font-size: 24px;  
+    font-family: 'Krub', sans-serif;
+}
+
+b
+{
+    color: #8036a8;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    
 }

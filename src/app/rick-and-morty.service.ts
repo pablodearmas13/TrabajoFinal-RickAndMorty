@@ -13,10 +13,15 @@ export class RickAndMortyService {
 
   constructor(private http: HttpClient) { }
 
-  get20Character()
+
+  getAllCharacter()
   {
-    console.log("Hace la peticion");
-    return this.http.get(`${environment.apiUrl}/character/1,20`);
+    return this.http.get(`${environment.apiUrl}/character/`);
+  }
+
+  getAllLocation(url: string)
+  {
+    return this.http.get(`${url}`);
   }
 
 }
